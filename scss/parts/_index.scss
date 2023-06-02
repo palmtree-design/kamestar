@@ -1,0 +1,16 @@
+header {
+    margin: 0 auto;
+    img {
+        width: 100vw;
+    }
+}
+
+.tiktok__area {
+    justify-content: space-between;
+    .tiktok__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
