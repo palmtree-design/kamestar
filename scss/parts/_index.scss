@@ -1,6 +1,7 @@
 header {
     margin: 0 auto;
     width: 100%;
+
     img {
         width: 100%;
     }
@@ -9,10 +10,12 @@ header {
 
 /*----- tiktok -----*/
 #tiktok {
-    margin: 0 auto;
+    margin: 0 auto 200px;
 }
+
 .tiktok__area {
     justify-content: space-evenly;
+
     .tiktok__text {
         display: flex;
         justify-content: center;
@@ -21,27 +24,107 @@ header {
         padding: 50px;
 
     }
+
     img {
         width: 40%;
         box-shadow: 20px 15px 15px 10px rgba(0, 0, 0, .5);
-        
+
     }
 }
 
 /*-----  reason  -----*/
 
 #reason {
-    .reason__area{
+    background-image: url(/images/haikei-1.png);
+    background-position: bottom;
+    background-size: 100%;
+    margin-bottom: 200px;
+
+    .reason__area {
         flex-wrap: wrap;
         justify-content: space-evenly;
+
         figure {
             width: 27%;
+
             img {
                 width: 90%;
                 text-align: center;
             }
-            
+
+            figcaption {
+                h3 {
+                    padding: 15px 0 20px;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: left;
+                }
+            }
         }
     }
 
 }
+
+/*-----  merit  -----*/
+
+#merit {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(180deg, rgba(255, 171, 217,.9), rgba(255, 171, 217,.3));
+    z-index: -10;
+    .merit__area {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 50px 0;
+        }
+    }
+
+    .merit__item {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+        .back_no {
+            position: absolute;
+            font-size: 120px;
+            top: 15px;
+            left: 15px;
+            font-weight: bolder;
+            z-index: 5;
+            
+        }
+        .back_01,
+        .back_04 {
+            color:rgba(255, 236, 83, .4);
+        }
+        .back_02,
+        .back_05 {
+            color:rgba(152, 220, 249, .4);
+        }
+        .back_03,
+        .back_06 {
+            color:rgba(255, 171, 217, .4);
+        }
+        .merit__inner {
+            min-height: 210px;
+            padding: 0 10px 10px 150px;
+            z-index: 10;
+            h3 {
+                display: block;
+                padding: 25px 0;
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+
+            
+        }
+        img {
+            justify-items: end;
+        }
+    }
