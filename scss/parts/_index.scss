@@ -8,7 +8,7 @@ header {
 }
 
 
-/*----- tiktok -----*/
+/*---------- tiktok ----------*/
 #tiktok {
     margin: 0 auto 200px;
 }
@@ -32,7 +32,7 @@ header {
     }
 }
 
-/*-----  reason  -----*/
+/*----------  reason  ----------*/
 
 #reason {
     background-image: url(/images/haikei-1.png);
@@ -67,64 +67,116 @@ header {
 
 }
 
-/*-----  merit  -----*/
+/*----------  merit  -----------*/
 
 #merit {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: linear-gradient(180deg, rgba(255, 171, 217,.9), rgba(255, 171, 217,.3));
-    z-index: -10;
+    background: url(/images/haikei-2.png),linear-gradient(180deg, rgba(255, 171, 217, .9), rgba(255, 171, 217, .3));
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom ,top;
+    
+
     .merit__area {
         display: grid;
         justify-content: space-evenly;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 50px 0;
-        }
+    }
+}
+
+.merit__item {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+
+    .back_no {
+        position: absolute;
+        font-size: 120px;
+        top: 15px;
+        left: 15px;
+        font-weight: bolder;
+        z-index: 5;
+
     }
 
-    .merit__item {
-        position: relative;
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #f8f8f8;
-        .back_no {
-            position: absolute;
-            font-size: 120px;
-            top: 15px;
-            left: 15px;
-            font-weight: bolder;
-            z-index: 5;
-            
-        }
-        .back_01,
-        .back_04 {
-            color:rgba(255, 236, 83, .4);
-        }
-        .back_02,
-        .back_05 {
-            color:rgba(152, 220, 249, .4);
-        }
-        .back_03,
-        .back_06 {
-            color:rgba(255, 171, 217, .4);
-        }
-        .merit__inner {
-            min-height: 210px;
-            padding: 0 10px 10px 150px;
-            z-index: 10;
-            h3 {
-                display: block;
-                padding: 25px 0;
-                font-size: 24px;
-            }
-            p {
-                font-size: 16px;
-            }
+    .back_01,
+    .back_04 {
+        color: rgba(255, 236, 83, .4);
+    }
 
-            
+    .back_02,
+    .back_05 {
+        color: rgba(152, 220, 249, .4);
+    }
+
+    .back_03,
+    .back_06 {
+        color: rgba(255, 171, 217, .4);
+    }
+
+    .merit__inner {
+        min-height: 210px;
+        padding: 0 10px 10px 150px;
+        z-index: 10;
+
+        h3 {
+            display: block;
+            padding: 25px 0;
+            font-size: 24px;
         }
-        img {
-            justify-items: end;
+
+        p {
+            font-size: 16px;
+        }
+
+
+    }
+
+    img {
+        justify-items: end;
+    }
+}
+
+/*---------- chance ----------*/
+
+.slide__area {
+    width: 100vw;
+    overflow: hidden;
+
+    img {
+        width: auto;
+        height: 100%;
+
+        &:first-child {
+            animation: slide1 60s -30s linear infinite;
+        }
+
+        &:last-child {
+            animation: slide2 60s linear infinite;
         }
     }
+}
+
+@keyframes slide1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
