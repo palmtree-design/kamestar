@@ -291,3 +291,34 @@ header {
         z-index: 1;
     }
 }
+/*---------- belong ----------*/
+#belong {
+    background-image: url(/images/haikei-6.png);
+}
+
+
+/*---------- liver ----------*/
+#liver {
+    background-image: url(/images/haikei-3.png);
+
+}
+.liver__area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,400px);
+    row-gap: 30px;
+    justify-content: space-evenly;
+    .liver__item{
+        border-radius: 5px;
+        h3 {
+            text-align: center;
+            background-color: #FFF8C3;
+            padding: 20px 0;
+        }
+        div {
+            padding: 10px;
+            a {
+                background-color: #98DCF9;
+            }
+        }
+    }
+}
