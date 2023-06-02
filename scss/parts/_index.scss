@@ -1,16 +1,47 @@
 header {
     margin: 0 auto;
+    width: 100%;
     img {
-        width: 100vw;
+        width: 100%;
     }
 }
 
+
+/*----- tiktok -----*/
+#tiktok {
+    margin: 0 auto;
+}
 .tiktok__area {
-    justify-content: space-between;
+    justify-content: space-evenly;
     .tiktok__text {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        width: 40%;
+        padding: 50px;
+
     }
+    img {
+        width: 40%;
+        box-shadow: 20px 15px 15px 10px rgba(0, 0, 0, .5);
+        
+    }
+}
+
+/*-----  reason  -----*/
+
+#reason {
+    .reason__area{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        figure {
+            width: 27%;
+            img {
+                width: 90%;
+                text-align: center;
+            }
+            
+        }
+    }
+
 }
