@@ -10,6 +10,7 @@ header {
 /*---------- tiktok ----------*/
 #tiktok {
     margin: 0 auto 200px;
+
     .wrapper {
         width: 100%;
         margin: 0 auto;
@@ -27,17 +28,19 @@ header {
         padding: 50px;
 
     }
+
     div {
         display: flex;
         width: 40%;
         justify-content: center;
         align-items: center;
-    img {
-        width: 100%;
-        height: auto;
-        vertical-align: middle;
-        box-shadow: 20px 15px 15px 10px rgba(0, 0, 0, .5);
-    }
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+            box-shadow: 20px 15px 15px 10px rgba(0, 0, 0, .5);
+        }
     }
 }
 
@@ -82,18 +85,19 @@ header {
 #merit {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url(/images/haikei-2.png),linear-gradient(180deg, rgba(255, 171, 217, .9), rgba(255, 171, 217, .3));
+    background: url(/images/haikei-2.png), linear-gradient(180deg, rgba(255, 171, 217, .9), rgba(255, 171, 217, .3));
     background-repeat: no-repeat;
     width: 100%;
-    background-position: bottom ,top;
-    
+    background-position: bottom, top;
+
 
     .merit__area {
         display: grid;
         justify-content: space-evenly;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        gap: 50px 0;
+        gap: 100px 50px;
+        width: 100%;
     }
 }
 
@@ -189,5 +193,101 @@ header {
 
     to {
         transform: translateX(-200%);
+    }
+}
+
+.chance__inner {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 100px auto;
+
+    .chance__text {
+        font-size: 20px;
+        width: 50%;
+        padding: 40px;
+
+    }
+
+    .chance__img {
+        width: 40%;
+        align-items: center;
+
+        img {
+            padding-top: 40px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        .line_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60px;
+            background-color: #E9537D;
+            border-radius: 20px;
+
+            p {
+                color: #f8f8f8;
+            }
+        }
+
+    }
+}
+
+/*---------- features ----------*/
+#features {
+    background: linear-gradient(180deg, rgba(254, 120, 127, .9), rgba(254, 120, 127, .3));
+    padding-bottom: 60px;
+    h2 {
+        padding-top: 60px;
+    }
+}
+.features__area {
+    justify-content: center;
+    
+
+    .features__text {
+        position: relative;
+        display: inline-block;
+        margin: 1.5em 25px 1.5em 0;
+        padding: 7px 10px;
+        min-width: 120px;
+        max-width: 100%;
+        color: #555;
+        font-size: 16px;
+        background: #FFF;
+        border: solid 6px #FE787F;
+        box-sizing: border-box;
+        border-radius: 20px;
+        ul {
+            margin:50px 65px;
+            li {
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+
+    .features__text::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -44px;
+        margin-top: -18px;
+        border: 18px solid transparent;
+        border-left: 28px solid #FFF;
+        z-index: 2;
+    }
+
+    .features__text::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -56px;
+        margin-top: -20px;
+        border: 20px solid transparent;
+        border-left: 30px solid #FE787F;
+        z-index: 1;
     }
 }
