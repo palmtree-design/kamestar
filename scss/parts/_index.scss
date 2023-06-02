@@ -7,10 +7,13 @@ header {
     }
 }
 
-
 /*---------- tiktok ----------*/
 #tiktok {
     margin: 0 auto 200px;
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .tiktok__area {
@@ -24,11 +27,17 @@ header {
         padding: 50px;
 
     }
-
-    img {
+    div {
+        display: flex;
         width: 40%;
+        justify-content: center;
+        align-items: center;
+    img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
         box-shadow: 20px 15px 15px 10px rgba(0, 0, 0, .5);
-
+    }
     }
 }
 
@@ -43,6 +52,7 @@ header {
     .reason__area {
         flex-wrap: wrap;
         justify-content: space-evenly;
+        width: 100%;
 
         figure {
             width: 27%;
@@ -120,6 +130,7 @@ header {
 
     .merit__inner {
         min-height: 210px;
+        width: auto;
         padding: 0 10px 10px 150px;
         z-index: 10;
 
