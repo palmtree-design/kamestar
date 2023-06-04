@@ -305,19 +305,43 @@ header {
 .liver__area {
     display: grid;
     grid-template-columns: repeat(auto-fit,400px);
-    row-gap: 30px;
+    row-gap: 40px;
     justify-content: space-evenly;
     .liver__item{
-        border-radius: 5px;
+        border: 1px solid #c9c7c7;
+        border-radius: 20px;
+        img {
+            border-radius: 20px 20px 0 0;
+        }
         h3 {
             text-align: center;
             background-color: #FFF8C3;
             padding: 20px 0;
         }
         div {
+            background-color: #fff;
             padding: 10px;
+            border-radius: 0 0 20px 20px;
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 25px;
+                text-align: left;
+                min-height: 125px;
+
+            }
+
             a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: #98DCF9;
+                text-align: center;
+                padding: 20px;
+                margin: 10px 30px 20px;
+                border-radius: 10px;
+                
             }
         }
     }
