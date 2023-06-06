@@ -239,13 +239,15 @@ header {
 #features {
     background: linear-gradient(180deg, rgba(254, 120, 127, .9), rgba(254, 120, 127, .3));
     padding-bottom: 60px;
+
     h2 {
         padding-top: 60px;
     }
 }
+
 .features__area {
     justify-content: center;
-    
+
 
     .features__text {
         position: relative;
@@ -260,8 +262,10 @@ header {
         border: solid 6px #FE787F;
         box-sizing: border-box;
         border-radius: 20px;
+
         ul {
-            margin:50px 65px;
+            margin: 50px 65px;
+
             li {
                 padding-bottom: 10px;
             }
@@ -291,6 +295,7 @@ header {
         z-index: 1;
     }
 }
+
 /*---------- belong ----------*/
 #belong {
     background-image: url(/images/haikei-6.png);
@@ -302,26 +307,32 @@ header {
     background-image: url(/images/haikei-3.png);
 
 }
+
 .liver__area {
     display: grid;
-    grid-template-columns: repeat(auto-fit,400px);
+    grid-template-columns: repeat(auto-fit, 400px);
     row-gap: 40px;
     justify-content: space-evenly;
-    .liver__item{
+
+    .liver__item {
         border: 1px solid #c9c7c7;
         border-radius: 20px;
+
         img {
             border-radius: 20px 20px 0 0;
         }
+
         h3 {
             text-align: center;
             background-color: #FFF8C3;
             padding: 20px 0;
         }
+
         div {
             background-color: #fff;
             padding: 10px;
             border-radius: 0 0 20px 20px;
+
             p {
                 display: flex;
                 align-items: center;
@@ -341,79 +352,80 @@ header {
                 padding: 20px;
                 margin: 10px 30px 20px;
                 border-radius: 10px;
-                
+
             }
         }
     }
 }
+
 /*---------- faq ----------*/
 #faq {
+    background-image: url(/images/haikei-4.png);
+    background-size: cover;
     h3 {
         background-color: #FE787F;
+        max-width: 500px;
+        text-align: center;
+        margin: 0;
     }
+
     .faq__inner {
         margin: 0 auto;
-        padding: 100px;
+        padding: 50px;
         font-size: 30px;
-        summary {
-            width: 90%;
-            margin: 0 auto 20px;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            background-color: #eee;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        summary::after {
-            font-family: "Font Awesome 5 Free";
-            content: "\f0d7";
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            transition: all 0.3s;
-        }
-        .details-content {
-            width: 90%;
-            margin: 0 auto 20px;
-        }
-        .details-content p {
-            width: 95%;
-        }
-        details[open] summary:after {
-            transform: rotate(180deg);
-        }
-        
-        details[open] .details-content {
-            animation: fadeIn 0.3s ease;
-        }
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        
+        background-color: rgba(255, 255, 255,.7);
 
+
+
+
+    .accordion-003 {
+        max-width: 1000px;
+        margin: 0 auto 7px;
+        border-bottom: 3px solid #fe787f;
+    }
+
+    .accordion-003 summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 1em 2em;
+        color: #333333;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .accordion-003 summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .accordion-003 summary::after {
+        transform: translateY(-25%) rotate(45deg);
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        border-bottom: 3px solid #fe787f;
+        border-right: 3px solid #fe787f;
+        content: '';
+        transition: transform .5s;
+    }
+
+    .accordion-003[open] summary::after {
+        transform: rotate(225deg);
+    }
+
+    .accordion-003 p {
+        transform: translateY(-10px);
+        opacity: 0;
+        margin: 0;
+        padding: .3em 2em 1.5em;
+        color: #333333;
+        transition: transform .5s, opacity .5s;
+    }
+
+    .accordion-003[open] p {
+        transform: none;
+        opacity: 1;
     }
 }
-
-
-
-
-
-
-@media screen and (max-width: 960px) {
-    summary {
-        width: 90%;
-    }
-    .details-content {
-        width: 90%;
-    }
-    .details-content p {
-        margin: 10px auto 15px;
-    }
 }
