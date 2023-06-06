@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body {
@@ -24,7 +24,7 @@ ol {
 }
 
 .wrapper {
-    max-width: 1380px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .flex {
@@ -36,4 +36,8 @@ h2 {
     text-align: center;
     margin: 60px auto;
     font-size: 40px;
+    .h2__star{
+        color: #FFEC53;
+        font-size: 44px;
+    }
 }

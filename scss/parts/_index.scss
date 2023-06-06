@@ -54,15 +54,18 @@ header {
 
     .reason__area {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
 
         figure {
             width: 27%;
+            margin: 0 25px;
+            text-align: center;
 
             img {
-                width: 90%;
+                width: 85%;
                 text-align: center;
+                margin: 0 auto;
             }
 
             figcaption {
@@ -85,7 +88,7 @@ header {
 #merit {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url(/images/haikei-2.png), linear-gradient(180deg, rgba(255, 171, 217, .9), rgba(255, 171, 217, .3));
+    background: url(/images/haikei-2.png), linear-gradient(180deg, rgba(255, 171, 217, .9), rgba(255, 171, 217, .1));
     background-repeat: no-repeat;
     width: 100%;
     background-position: bottom, top;
@@ -102,8 +105,10 @@ header {
 }
 
 .merit__item {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #f8f8f8;
 
@@ -135,24 +140,29 @@ header {
     .merit__inner {
         min-height: 210px;
         width: auto;
-        padding: 0 10px 10px 150px;
+        padding: 0 10px 10px 120px;
         z-index: 10;
 
         h3 {
             display: block;
             padding: 25px 0;
             font-size: 24px;
+            min-height: 125px;
         }
 
         p {
             font-size: 16px;
+
         }
 
 
     }
 
     img {
+        display: flex;
         justify-items: end;
+        width: 100%;
+        margin-top: auto;
     }
 }
 
@@ -198,25 +208,25 @@ header {
 
 .chance__inner {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 100px auto;
 
     .chance__text {
         font-size: 20px;
         width: 50%;
-        padding: 40px;
+        padding: 25px;
 
     }
 
     .chance__img {
-        width: 40%;
+        width: 45%;
         align-items: center;
 
         img {
-            padding-top: 40px;
+            padding-top: 25px;
             width: 100%;
             height: auto;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
         }
 
         .line_btn {
@@ -299,27 +309,41 @@ header {
 /*---------- belong ----------*/
 #belong {
     background-image: url(/images/haikei-6.png);
+
+    .belong__area {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 27%;
+            margin: 0 30px;
+        }
+    }
 }
 
 
 /*---------- liver ----------*/
 #liver {
     background-image: url(/images/haikei-3.png);
+    background-repeat: repeat-y;
 
 }
 
 .liver__area {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
-    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, 280px);
+    row-gap: 50px;
     justify-content: space-evenly;
 
     .liver__item {
+        display: flex;
+        flex-direction: column;
         border: 1px solid #c9c7c7;
         border-radius: 20px;
 
         img {
             border-radius: 20px 20px 0 0;
+            width: 100%;
         }
 
         h3 {
@@ -329,8 +353,9 @@ header {
         }
 
         div {
+            display: flex;
+            flex-direction: column;
             background-color: #fff;
-            padding: 10px;
             border-radius: 0 0 20px 20px;
 
             p {
@@ -344,13 +369,14 @@ header {
             }
 
             a {
+                margin-top: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background-color: #98DCF9;
                 text-align: center;
                 padding: 20px;
-                margin: 10px 30px 20px;
+                margin: 5px 15px 10px;
                 border-radius: 10px;
 
             }
@@ -362,70 +388,216 @@ header {
 #faq {
     background-image: url(/images/haikei-4.png);
     background-size: cover;
+
     h3 {
         background-color: #FE787F;
         max-width: 500px;
         text-align: center;
-        margin: 0;
+        margin-bottom: 50px;
     }
 
     .faq__inner {
         margin: 0 auto;
         padding: 50px;
         font-size: 30px;
-        background-color: rgba(255, 255, 255,.7);
+        background-color: rgba(255, 255, 255, .7);
 
 
 
 
-    .accordion-003 {
-        max-width: 1000px;
-        margin: 0 auto 7px;
-        border-bottom: 3px solid #fe787f;
-    }
+        .accordion-003 {
+            max-width: 1000px;
+            margin: 0 auto 7px;
+            border-bottom: 3px solid #fe787f;
+        }
 
-    .accordion-003 summary {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 1em 2em;
-        color: #333333;
-        font-weight: 600;
-        cursor: pointer;
-    }
+        .accordion-003 summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 1em 2em;
+            color: #333333;
+            font-weight: 600;
+            cursor: pointer;
+        }
 
-    .accordion-003 summary::-webkit-details-marker {
-        display: none;
-    }
+        .accordion-003 summary::-webkit-details-marker {
+            display: none;
+        }
 
-    .accordion-003 summary::after {
-        transform: translateY(-25%) rotate(45deg);
-        width: 10px;
-        height: 10px;
-        margin-left: 10px;
-        border-bottom: 3px solid #fe787f;
-        border-right: 3px solid #fe787f;
-        content: '';
-        transition: transform .5s;
-    }
+        .accordion-003 summary::after {
+            transform: translateY(-25%) rotate(45deg);
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+            border-bottom: 3px solid #fe787f;
+            border-right: 3px solid #fe787f;
+            content: '';
+            transition: transform .5s;
+        }
 
-    .accordion-003[open] summary::after {
-        transform: rotate(225deg);
-    }
+        .accordion-003[open] summary::after {
+            transform: rotate(225deg);
+        }
 
-    .accordion-003 p {
-        transform: translateY(-10px);
-        opacity: 0;
-        margin: 0;
-        padding: .3em 2em 1.5em;
-        color: #333333;
-        transition: transform .5s, opacity .5s;
-    }
+        .accordion-003 p {
+            transform: translateY(-10px);
+            opacity: 0;
+            margin: 0;
+            padding: .3em 2em 1.5em;
+            color: #333333;
+            transition: transform .5s, opacity .5s;
+        }
 
-    .accordion-003[open] p {
-        transform: none;
-        opacity: 1;
+        .accordion-003[open] p {
+            transform: none;
+            opacity: 1;
+        }
     }
 }
+
+/*---------- salary ----------*/
+
+#salary {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url(/images/haikei-4.png), linear-gradient(180deg, rgba(152, 220, 249, .9), rgba(152, 220, 249, .1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, top;
+
+
+    div {
+        h2 {
+            margin: 30px auto 20px;
+        }
+
+        .salary__sub {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .salary__area {
+        width: 90%;
+        padding: 20px;
+        border: 10px solid #FFEC53;
+        border-radius: 20px;
+        background-color: #fff;
+
+        h3 {
+            font-size: 26px;
+            text-align: center;
+            margin: 30px auto 0;
+        }
+
+        p {
+            padding: 4%;
+            line-height: 3rem;
+            text-align: center;
+        }
+
+    }
+
+    .line_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        background-color: #E9537D;
+        border-radius: 20px;
+        max-width: 450px;
+        color: #f8f8f8;
+        margin: 50px auto 20px;
+    }
+}
+
+/*---------- flow ----------*/
+
+
+
+#flow {
+    background-image: url(/images/haikei-2.png);
+    background-size: cover;
+    .flow__area {
+        .flow__item {
+            width: 85%;
+            margin: 50px auto;
+            position: relative;
+            background-color: #fff;
+
+            h3 {
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                text-align: center;
+                width: 320px;
+                background-color: #FE787F;
+                color: #fff;
+                position: absolute;
+                z-index: 10;
+                border-radius: 10px;
+            }
+
+            .flow__inner {
+
+                justify-content: space-evenly;
+                border-radius: 10px;
+                padding: 10px;
+                border: 1px solid #000;
+
+                .flow__icon {
+                    display: flex;
+                    width: auto;
+                    height: 160px;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+                .flow__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 45%;
+
+                    h4 {
+                        text-align: center;
+                    }
+                }
+            }
+
+
+        }
+    }
+    .line_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        background-color: #E9537D;
+        border-radius: 20px;
+        max-width: 450px;
+        color: #f8f8f8;
+        margin: 50px auto 20px;
+    }
+}
+/*---------- About ----------*/
+.about__area {
+    justify-content:space-between;
+
+    .about__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        background-color: #F3A7D0;
+        border-radius: 10px;
+        color: #fff;
+        padding: 30px;
+        line-height: 2.5rem;
+    }
 }
