@@ -514,7 +514,7 @@ header {
             }
 
             @include m.spc {
-                width: 70%;
+                width: 85%;
                 margin: 0 auto;
 
             }
@@ -535,6 +535,9 @@ header {
     grid-template-columns: repeat(auto-fit, 280px);
     row-gap: 50px;
     justify-content: space-evenly;
+    @include m.spc {
+        grid-template-columns: 85%;
+    }
 
     .liver__item {
         display: flex;
@@ -602,6 +605,10 @@ header {
         padding: 50px;
         font-size: 30px;
         background-color: rgba(255, 255, 255, .7);
+        @include m.spc {
+            padding: 20px;
+            margin: 0 auto 50px;
+        }
 
 
 
@@ -676,7 +683,16 @@ header {
 
         .salary__sub {
             text-align: center;
-            margin-bottom: 50px;
+            margin: 0 auto 50px;
+            br{
+                display: none;
+                @include m.spc {
+                    display: block;
+                }
+            }
+            @include m.spc {
+                margin: 0 15px 50px;
+            }
         }
     }
 
@@ -711,6 +727,9 @@ header {
         max-width: 450px;
         color: #f8f8f8;
         margin: 50px auto 20px;
+        @include m.spc {
+            margin: 50px 30px 20px;
+        }
     }
 }
 
@@ -803,6 +822,9 @@ header {
         max-width: 450px;
         color: #f8f8f8;
         margin: 50px auto 20px;
+        @include m.spc {
+            margin: 0 30px;
+        }
     }
 }
 
@@ -879,6 +901,9 @@ header {
         margin: 30px auto;
         background-color: rgba(255, 255, 255, .4);
         padding: 30px 60px;
+        @include m.spc {
+            padding: 20px 10px;
+        }
 
         h2 {
             margin: 30px auto 10px;
@@ -919,17 +944,27 @@ footer {
 
     .footer__area {
         justify-content: space-evenly;
+        @include m.spc {
+            flex-direction: column;
+            justify-content: center;
+        }
 
         table {
             tr {
                 .footer__th {
                     min-width: 150px;
+                    @include m.spc {
+                        min-width: 120px;
+                    }
                 }
 
                 td {
 
                     padding-left: 30px;
                     width: 70%;
+                    @include m.spc {
+                        padding-left: 0;
+                    }
                 }
             }
         }
