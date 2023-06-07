@@ -1,0 +1,21 @@
+//レスポンシブ
+
+//mediaquerry
+
+$tab: 834px;
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+
+$spc: 520px;
+
+@mixin spc {
+    @media (max-width: ($spc)) {
+        @content;
+    }
+}
+
+// @include m.tab {}
