@@ -24,6 +24,9 @@ header {
 
 .tiktok__area {
     justify-content: space-evenly;
+    @include m.spc {
+        flex-direction: column-reverse;
+    }
 
     .tiktok__text {
         display: flex;
@@ -32,9 +35,13 @@ header {
         width: 40%;
         padding: 40px;
         @include m.tab {
-            padding: 20px;
+            padding: 15px;
             width: 45%;
         }
+        @include m.spc {
+            width: 100%;
+        }
+        
 
     }
 
@@ -43,12 +50,19 @@ header {
         width: 40%;
         justify-content: center;
         align-items: center;
+        @include m.spc {
+            width: 80%;
+            margin: 0 auto 20px;
+        }
 
         img {
             width: 100%;
             height: auto;
             vertical-align: middle;
-            box-shadow: 20px 15px 15px 10px rgba(0, 0, 0, .5);
+            box-shadow: 15px 15px 15px 10px rgba(0, 0, 0, .5);
+            @include m.spc {
+                box-shadow: 5px 5px 5px 6px rgba(0,0,0,.5);
+            }
         }
     }
 }
@@ -56,18 +70,27 @@ header {
 /*----------  reason  ----------*/
 
 #reason {
-    background-image: url(/images/haikei-1.png);
-    background-position: bottom;
+    background-image: url(/images/haikei-1.png),url(/images/haikei-4.png);
+    background-position: bottom,top;
     background-size: 100%;
     margin-bottom: 200px;
     @include m.tab {
         margin-bottom: 100px;
+    }
+    @include m.spc {
+        background-image: url(/images/haikei-1.png),url(/images/haikei-4.png),url(/images/haikei-5.png);
+        background-position: bottom,top,center;
     }
 
     .reason__area {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        @include m.spc {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         figure {
             width: 27%;
@@ -75,6 +98,10 @@ header {
             text-align: center;
             @include m.tab {
                 margin: 0 5px;
+            }
+            @include m.spc {
+                width: 80%;
+                margin: 10px auto;
             }
 
             img {
@@ -116,6 +143,10 @@ header {
         grid-template-rows: auto;
         gap: 100px 50px;
         width: 100%;
+        @include m.spc {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
     }
 }
 
@@ -126,6 +157,9 @@ header {
     max-width: 100%;
     margin: 0 auto;
     background-color: #f8f8f8;
+    @include m.spc {
+        margin: 10px auto;
+    }
 
     .back_no {
         position: absolute;
@@ -139,6 +173,10 @@ header {
             top: 15px;
             left: auto;
             right: 10px;
+        }
+        @include m.spc {
+            right: auto;
+            left: 10px;
         }
 
     }
@@ -166,6 +204,7 @@ header {
         @include m.tab {
             padding: 0  10px 5px;
         }
+
 
         h3 {
             display: block;
