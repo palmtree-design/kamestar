@@ -12,6 +12,7 @@ header {
 /*---------- tiktok ----------*/
 #tiktok {
     margin: 0 auto 200px;
+
     @include m.tab {
         margin: 0 auto 100px;
     }
@@ -24,6 +25,7 @@ header {
 
 .tiktok__area {
     justify-content: space-evenly;
+
     @include m.spc {
         flex-direction: column-reverse;
     }
@@ -34,14 +36,16 @@ header {
         align-items: center;
         width: 40%;
         padding: 40px;
+
         @include m.tab {
             padding: 15px;
             width: 45%;
         }
+
         @include m.spc {
             width: 100%;
         }
-        
+
 
     }
 
@@ -50,6 +54,7 @@ header {
         width: 40%;
         justify-content: center;
         align-items: center;
+
         @include m.spc {
             width: 80%;
             margin: 0 auto 20px;
@@ -59,9 +64,10 @@ header {
             width: 100%;
             height: auto;
             vertical-align: middle;
-            box-shadow: 15px 15px 15px 10px rgba(0, 0, 0, .5);
+            box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, .5);
+
             @include m.spc {
-                box-shadow: 5px 5px 5px 6px rgba(0,0,0,.5);
+                box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, .5);
             }
         }
     }
@@ -70,22 +76,25 @@ header {
 /*----------  reason  ----------*/
 
 #reason {
-    background-image: url(/images/haikei-1.png),url(/images/haikei-4.png);
-    background-position: bottom,top;
+    background-image: url(/images/haikei-1.png);
+    background-position: bottom, top;
     background-size: 100%;
     margin-bottom: 200px;
+
     @include m.tab {
         margin-bottom: 100px;
     }
+
     @include m.spc {
-        background-image: url(/images/haikei-1.png),url(/images/haikei-4.png),url(/images/haikei-5.png);
-        background-position: bottom,top,center;
+        background-image: url(/images/haikei-1.png), url(/images/haikei-4.png), url(/images/haikei-5.png);
+        background-position: bottom, top, center;
     }
 
     .reason__area {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+
         @include m.spc {
             flex-direction: column;
             justify-content: center;
@@ -96,9 +105,12 @@ header {
             width: 27%;
             margin: 0 25px;
             text-align: center;
+
             @include m.tab {
-                margin: 0 5px;
+                margin: 0 15px;
+                min-width: 170px;
             }
+
             @include m.spc {
                 width: 80%;
                 margin: 10px auto;
@@ -132,7 +144,7 @@ header {
     padding-bottom: 50px;
     background: url(/images/haikei-2.png), linear-gradient(180deg, rgba(255, 171, 217, .9), rgba(255, 171, 217, .1));
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: 100%;
     background-position: bottom, top;
 
 
@@ -143,6 +155,11 @@ header {
         grid-template-rows: auto;
         gap: 100px 50px;
         width: 100%;
+
+        @include m.tab {
+            gap: 40px 20px;
+        }
+
         @include m.spc {
             grid-template-columns: 1fr;
             gap: 0;
@@ -157,6 +174,7 @@ header {
     max-width: 100%;
     margin: 0 auto;
     background-color: #f8f8f8;
+
     @include m.spc {
         margin: 10px auto;
     }
@@ -168,12 +186,14 @@ header {
         left: 15px;
         font-weight: bolder;
         z-index: 5;
+
         @include m.tab {
             font-size: 70px;
             top: 15px;
             left: auto;
             right: 10px;
         }
+
         @include m.spc {
             right: auto;
             left: 10px;
@@ -201,18 +221,28 @@ header {
         width: auto;
         padding: 0 10px 10px 120px;
         z-index: 10;
+
         @include m.tab {
-            padding: 0  10px 5px;
+            padding: 0 10px 5px;
         }
 
 
         h3 {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 25px 0;
             font-size: 24px;
             min-height: 125px;
+
             @include m.tab {
                 font-size: 20px;
+                justify-content: left;
+            }
+
+            @include m.spc {
+                justify-content: end;
+                vertical-align: middle;
             }
         }
 
@@ -276,6 +306,7 @@ header {
     width: 100%;
     justify-content: space-between;
     margin: 100px auto;
+
     @include m.tab {
         flex-direction: column-reverse;
         margin: 20px auto;
@@ -285,10 +316,12 @@ header {
         font-size: 20px;
         width: 50%;
         padding: 25px;
+
         @include m.tab {
             width: 90%;
             margin: 0 auto;
         }
+
         .line_btn {
             display: none;
             justify-content: center;
@@ -296,6 +329,7 @@ header {
             min-height: 60px;
             background-color: #E9537D;
             border-radius: 20px;
+
             @include m.tab {
                 display: flex;
                 margin-top: 40px;
@@ -310,15 +344,18 @@ header {
     .chance__img {
         width: 45%;
         align-items: center;
+
         @include m.tab {
             width: 90%;
             margin: 0 auto;
         }
+
         img {
             padding-top: 25px;
             width: 100%;
             height: auto;
             margin-bottom: 80px;
+
             @include m.tab {
                 margin-bottom: 30px;
             }
@@ -331,6 +368,7 @@ header {
             min-height: 60px;
             background-color: #E9537D;
             border-radius: 20px;
+
             @include m.tab {
                 display: none;
             }
@@ -355,15 +393,18 @@ header {
 
 .features__area {
     justify-content: center;
+
     .features__img {
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 450px;
         height: auto;
+
         @include m.tab {
             min-width: 200px;
         }
+
         img {
             width: 90%;
         }
@@ -383,13 +424,16 @@ header {
         border: solid 6px #FE787F;
         box-sizing: border-box;
         border-radius: 20px;
+
         @include m.tab {
             padding: 5px;
             min-width: 270px;
             margin: 1.2em 25px 1.2em 25px;
         }
+
         ul {
             margin: 45px 50px;
+
             @include m.tab {
                 margin: 20px 15px;
             }
@@ -427,6 +471,18 @@ header {
 /*---------- belong ----------*/
 #belong {
     background-image: url(/images/haikei-6.png);
+    background-size: cover;
+    background-position: center;
+
+    @include m.tab {
+        background-size: 100%;
+    }
+
+    @include m.spc {
+        background-size: 100%;
+        background-image: none;
+    }
+
     .belong__text {
         display: flex;
         width: 80%;
@@ -440,12 +496,27 @@ header {
         justify-content: center;
         flex-wrap: wrap;
 
+        @include m.spc {
+            flex-direction: column;
+            background-image: url(/images/haikei-6.png);
+            background-size: 100%;
+            background-repeat: repeat-y;
+            background-position: center;
+        }
+
         img {
-            width: 27%;
+            width: 29%;
             margin: 0 15px;
+
             @include m.tab {
                 width: 30%;
                 margin: 0;
+            }
+
+            @include m.spc {
+                width: 70%;
+                margin: 0 auto;
+
             }
         }
     }
@@ -456,7 +527,7 @@ header {
 #liver {
     background-image: url(/images/haikei-3.png);
     background-repeat: repeat-y;
-
+    background-size: 100%;
 }
 
 .liver__area {
@@ -517,7 +588,7 @@ header {
 /*---------- faq ----------*/
 #faq {
     background-image: url(/images/haikei-4.png);
-    background-size: cover;
+    background-size: 100%;
 
     h3 {
         background-color: #FE787F;
@@ -594,7 +665,7 @@ header {
     padding-bottom: 30px;
     background: url(/images/haikei-4.png), linear-gradient(180deg, rgba(152, 220, 249, .9), rgba(152, 220, 249, .1));
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: bottom, top;
 
 
@@ -649,14 +720,18 @@ header {
 
 #flow {
     background-image: url(/images/haikei-2.png);
-    background-size: cover;
+    background-size: 100%;
     padding-bottom: 30px;
+
     .flow__area {
         .flow__item {
             width: 85%;
             margin: 50px auto;
             position: relative;
             background-color: #fff;
+            @include m.spc {
+                width: 95%;
+            }
 
             h3 {
                 top: -10px;
@@ -676,9 +751,13 @@ header {
             .flow__inner {
 
                 justify-content: space-evenly;
+                align-items: center;
                 border-radius: 10px;
                 padding: 10px;
                 border: 1px solid #000;
+                @include m.spc {
+                    padding: 20px 5px 10px;
+                }
 
                 .flow__icon {
                     display: flex;
@@ -687,6 +766,10 @@ header {
                     align-items: center;
                     justify-content: center;
 
+                    @include m.spc {
+                        height: 120px;
+                    }
+
                 }
 
                 .flow__text {
@@ -694,6 +777,11 @@ header {
                     flex-direction: column;
                     justify-content: space-evenly;
                     width: 45%;
+                    @include m.spc {
+                        width: 55%;
+                        font-size: 16px;
+                    }
+
 
                     h4 {
                         text-align: center;
@@ -704,6 +792,7 @@ header {
 
         }
     }
+
     .line_btn {
         display: flex;
         justify-content: center;
@@ -716,57 +805,67 @@ header {
         margin: 50px auto 20px;
     }
 }
+
 /*---------- About ----------*/
 #about {
     background-color: rgba(253, 167, 208, .3);
     padding-top: 30px;
     padding-bottom: 30px;
-    h2{
+
+    h2 {
         margin: 30px auto 60px;
     }
-.about__area {
-    justify-content:space-around;
-    @include m.tab {
-        flex-direction: column;
-    }
+
+    .about__area {
+        justify-content: space-around;
+
+        @include m.tab {
+            flex-direction: column;
+        }
 
 
-    .about__text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 45%;
-        background-color: #F3A7D0;
-        border-radius: 10px;
-        color: #fff;
-        padding: 30px;
-        line-height: 2.5rem;
-        @include m.tab {
-            width: 100%;
-            margin-bottom: 30px;
+        .about__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            background-color: #F3A7D0;
+            border-radius: 10px;
+            color: #fff;
+            padding: 30px;
+            line-height: 2.5rem;
+
+            @include m.tab {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            p {
+                min-width: 380px;
+                margin: 0 auto;
+            }
         }
-        p {
-            min-width: 380px;
-            margin: 0 auto;
-        }
-    }
-    .about__images {
-        width: 40%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        @include m.tab {
-            grid-template-columns: repeat(4,1fr);
-            width: 100%;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        img {
-            width: 100%;
+
+        .about__images {
+            width: 40%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            @include m.tab {
+                grid-template-columns: repeat(4, 1fr);
+                width: 100%;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
-}
+
 /*---------- contact ----------*/
 #contact {
     background-image: url(/images/contact-1.png);
@@ -774,25 +873,30 @@ header {
     background-position: center;
     padding: 20px;
 
-    .contact__area{
+    .contact__area {
         display: flex;
         flex-direction: column;
         margin: 30px auto;
-        background-color: rgba(255, 255, 255,.4);
+        background-color: rgba(255, 255, 255, .4);
         padding: 30px 60px;
+
         h2 {
             margin: 30px auto 10px;
         }
+
         .contact__sub {
             text-align: center;
         }
-        .contact__text{
+
+        .contact__text {
             width: 650px;
             margin: 40px auto;
+
             @include m.tab {
                 width: 400px;
             }
         }
+
         .line_btn {
             display: flex;
             justify-content: center;
@@ -805,42 +909,49 @@ header {
             margin: 20px auto 20px;
         }
 
-    } 
+    }
 }
+
 /*---------- footer ----------*/
 footer {
     background: linear-gradient(180deg, rgba(255, 236, 83, .1), rgba(255, 236, 83, .9));
     padding-top: 30px;
 
-.footer__area {
-    justify-content: space-evenly;
-    table {
-        tr {
-            .footer__th {
-                min-width: 150px;
-            }
-            td {
+    .footer__area {
+        justify-content: space-evenly;
 
-                padding-left: 30px;
-                width: 70%;
+        table {
+            tr {
+                .footer__th {
+                    min-width: 150px;
+                }
+
+                td {
+
+                    padding-left: 30px;
+                    width: 70%;
+                }
+            }
+        }
+
+        .sns__qr {
+            width: 15%;
+            margin: 10px;
+
+            @include m.tab {
+                min-width: 125px;
+            }
+
+            img {
+                width: 100%;
             }
         }
     }
-    .sns__qr {
-        width: 15%;
-        margin: 10px;
-        @include m.tab {
-            min-width: 125px;
-        }
-        img {
-            width: 100%;
-        }
+
+    .footer__copyligt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
     }
-}
-.footer__copyligt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
 }
