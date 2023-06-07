@@ -520,6 +520,7 @@ header {
 #flow {
     background-image: url(/images/haikei-2.png);
     background-size: cover;
+    padding-bottom: 30px;
     .flow__area {
         .flow__item {
             width: 85%;
@@ -586,8 +587,16 @@ header {
     }
 }
 /*---------- About ----------*/
+#about {
+    background-color: rgba(253, 167, 208, .3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2{
+        margin: 30px auto 60px;
+    }
 .about__area {
-    justify-content:space-between;
+    justify-content:space-around;
+
 
     .about__text {
         display: flex;
@@ -600,4 +609,51 @@ header {
         padding: 30px;
         line-height: 2.5rem;
     }
+    .about__images {
+        width: 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        img {
+            width: 100%;
+        }
+    }
+}
+}
+/*---------- contact ----------*/
+#contact {
+    background-image: url(/images/contact-1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+
+    .contact__area{
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        background-color: rgba(255, 255, 255,.4);
+        padding: 30px 60px;
+        h2 {
+            margin: 30px auto 10px;
+        }
+        .contact__sub {
+            text-align: center;
+        }
+        .contact__text{
+            width: 650px;
+            margin: 40px auto;
+        }
+        .line_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60px;
+            background-color: #E9537D;
+            border-radius: 20px;
+            max-width: 450px;
+            color: #f8f8f8;
+            margin: 20px auto 20px;
+        }
+
+    } 
 }
