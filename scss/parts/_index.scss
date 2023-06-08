@@ -289,17 +289,17 @@ header {
         }
     }
 }
-// .slide__area1 {
-//     @include m.spc {
-//         display: none;
-//     }
-// }
-// .slide__area2 {
-//     display: none;
-//     @include m.spc {
-//         display: flex;
-//     }
-// }
+.slide__area1 {
+    @include m.spc {
+        display: none;
+    }
+}
+.slide__area2 {
+    display: none;
+    @include m.spc {
+        display: flex;
+    }
+}
 
 
 @keyframes slide1 {
