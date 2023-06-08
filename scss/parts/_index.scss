@@ -402,6 +402,7 @@ header {
 
 .features__area {
     justify-content: center;
+    flex-direction: column;
 
     .features__img {
         display: flex;
@@ -591,7 +592,10 @@ header {
                 padding: 20px;
                 margin: 5px 15px 10px;
                 border-radius: 10px;
-
+                @include m.spc {
+                    width: 250px;
+                    margin: 0 auto 15px;
+                }
             }
         }
     }
@@ -601,6 +605,11 @@ header {
 #faq {
     background-image: url(/images/haikei-4.png);
     background-size: 100%;
+    @include m.spc {
+        h2 {
+            margin: 50px auto 30px;
+        }
+    }
 
     h3 {
         background-color: #FE787F;
@@ -743,7 +752,7 @@ header {
         color: #f8f8f8;
         margin: 50px auto 20px;
         @include m.spc {
-            margin: 50px 30px 20px;
+            margin: 50px auto 20px;
         }
     }
 }
@@ -780,6 +789,9 @@ header {
                 position: absolute;
                 z-index: 10;
                 border-radius: 10px;
+                @include m.spc {
+                    width: 250px;
+                }
             }
 
             .flow__inner {
@@ -804,7 +816,7 @@ header {
                     justify-content: center;
 
                     @include m.spc {
-                        height: 120px;
+                        height: 110px;
                     }
 
                 }
@@ -838,11 +850,11 @@ header {
         min-height: 60px;
         background-color: #E9537D;
         border-radius: 20px;
-        max-width: 450px;
+        max-width: 380px;
         color: #f8f8f8;
         margin: 50px auto 20px;
         @include m.spc {
-            margin: 0 30px;
+            margin: 0 auto;
         }
     }
 }
@@ -882,7 +894,7 @@ header {
             }
 
             p {
-                min-width: 380px;
+                // min-width: 380px;
                 margin: 0 auto;
             }
         }
@@ -913,6 +925,9 @@ header {
     background-size: cover;
     background-position: center;
     padding: 20px;
+    @include m.spc {
+        padding: 20px 10px;
+    }
 
     .contact__area {
         display: flex;
@@ -933,11 +948,11 @@ header {
         }
 
         .contact__text {
-            width: 650px;
+            width: 100%;
             margin: 40px auto;
 
             @include m.tab {
-                width: 400px;
+                // width: 400px;
             }
         }
 
@@ -948,7 +963,7 @@ header {
             min-height: 60px;
             background-color: #E9537D;
             border-radius: 20px;
-            max-width: 450px;
+            max-width: 380px;
             color: #f8f8f8;
             margin: 20px auto 20px;
         }
@@ -999,6 +1014,9 @@ footer {
 
             img {
                 width: 100%;
+            }
+            @include m.spc {
+                display: none;
             }
         }
     }
