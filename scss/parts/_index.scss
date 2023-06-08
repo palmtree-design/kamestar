@@ -402,7 +402,10 @@ header {
 
 .features__area {
     justify-content: center;
-    flex-direction: column;
+    @include m.spc {
+        flex-direction: column;
+    }
+    
 
     .features__img {
         display: flex;
