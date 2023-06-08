@@ -44,6 +44,7 @@ header {
 
         @include m.spc {
             width: 100%;
+            padding-top: 50px;
         }
 
 
@@ -89,6 +90,9 @@ header {
         background-image: url(/images/haikei-1.png), url(/images/haikei-4.png), url(/images/haikei-5.png);
         background-position: bottom, top, center;
     }
+    h2 {
+        margin: 50px auto 20px;
+    }
 
     .reason__area {
         flex-wrap: wrap;
@@ -102,8 +106,9 @@ header {
         }
 
         figure {
-            width: 27%;
-            margin: 0 25px;
+            width: 26%;
+            margin: 0 3%;
+            padding-top: 40px;
             text-align: center;
 
             @include m.tab {
@@ -157,7 +162,7 @@ header {
         width: 100%;
 
         @include m.tab {
-            gap: 40px 20px;
+            gap: 50px 40px;
         }
 
         @include m.spc {
@@ -230,7 +235,7 @@ header {
         h3 {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: left;
             padding: 25px 0;
             font-size: 24px;
             min-height: 125px;
@@ -241,6 +246,7 @@ header {
             }
 
             @include m.spc {
+                text-align: right;
                 justify-content: end;
                 vertical-align: middle;
             }
@@ -248,6 +254,7 @@ header {
 
         p {
             font-size: 16px;
+            padding-bottom: 15px;
 
         }
 
@@ -315,7 +322,7 @@ header {
     .chance__text {
         font-size: 20px;
         width: 50%;
-        padding: 25px;
+        padding: 15px;
 
         @include m.tab {
             width: 90%;
@@ -332,7 +339,8 @@ header {
 
             @include m.tab {
                 display: flex;
-                margin-top: 40px;
+                max-width: 380px;
+                margin: 40px auto 0;
             }
 
             p {
@@ -344,6 +352,7 @@ header {
     .chance__img {
         width: 45%;
         align-items: center;
+        padding: 15px;
 
         @include m.tab {
             width: 90%;
@@ -351,7 +360,6 @@ header {
         }
 
         img {
-            padding-top: 25px;
             width: 100%;
             height: auto;
             margin-bottom: 80px;
@@ -366,6 +374,7 @@ header {
             justify-content: center;
             align-items: center;
             min-height: 60px;
+            max-width: 380px;
             background-color: #E9537D;
             border-radius: 20px;
 
@@ -602,7 +611,7 @@ header {
 
     .faq__inner {
         margin: 0 auto;
-        padding: 50px;
+        padding: 20px;
         font-size: 30px;
         background-color: rgba(255, 255, 255, .7);
         @include m.spc {
@@ -713,6 +722,12 @@ header {
             padding: 4%;
             line-height: 3rem;
             text-align: center;
+            @include m.tab {
+                line-height: 2rem;
+            }
+            @include m.spc {
+                line-height: 2rem;
+            }
         }
 
     }
@@ -724,7 +739,7 @@ header {
         min-height: 60px;
         background-color: #E9537D;
         border-radius: 20px;
-        max-width: 450px;
+        max-width: 380px;
         color: #f8f8f8;
         margin: 50px auto 20px;
         @include m.spc {
@@ -772,10 +787,13 @@ header {
                 justify-content: space-evenly;
                 align-items: center;
                 border-radius: 10px;
-                padding: 10px;
+                padding: 25px 10px 15px;
                 border: 1px solid #000;
+                @include m.tab {
+                    padding: 25px 10px 15px;
+                }
                 @include m.spc {
-                    padding: 20px 5px 10px;
+                    padding: 25px 5px 15px;
                 }
 
                 .flow__icon {
@@ -804,6 +822,7 @@ header {
 
                     h4 {
                         text-align: center;
+                        padding-bottom: 12px;
                     }
                 }
             }
@@ -971,6 +990,7 @@ footer {
 
         .sns__qr {
             width: 15%;
+            max-width: 200px;
             margin: 10px;
 
             @include m.tab {
