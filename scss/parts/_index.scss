@@ -158,7 +158,7 @@ header {
         justify-content: space-evenly;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        gap: 100px 50px;
+        gap: 100px 45px;
         width: 100%;
 
         @include m.tab {
@@ -224,7 +224,7 @@ header {
     .merit__inner {
         min-height: 210px;
         width: auto;
-        padding: 0 10px 10px 120px;
+        padding: 0 10px 10px 99px;
         z-index: 10;
 
         @include m.tab {
@@ -241,7 +241,7 @@ header {
             min-height: 125px;
 
             @include m.tab {
-                font-size: 20px;
+                font-size: 18px;
                 justify-content: left;
             }
 
@@ -249,6 +249,13 @@ header {
                 text-align: right;
                 justify-content: end;
                 vertical-align: middle;
+                font-size: 22px;
+            }
+            br {
+                display: none;
+            @include m.spc {
+                display: none;
+            }
             }
         }
 
@@ -271,9 +278,34 @@ header {
 
 /*---------- chance ----------*/
 
-.slide__area {
+.slide__area1 {
     width: 100vw;
     overflow: hidden;
+    @include m.spc {
+        display: none;
+    }
+
+    img {
+        width: auto;
+        height: 100%;
+
+        &:first-child {
+            animation: slide1 60s -30s linear infinite;
+        }
+
+        &:last-child {
+            animation: slide2 60s linear infinite;
+        }
+    }
+}
+.slide__area2 {
+    width: 100vw;
+    overflow: hidden;
+    display: none;
+
+    @include m.spc {
+        display: flex;
+    }
     
 
     img {
@@ -289,18 +321,6 @@ header {
         }
     }
 }
-.slide__area1 {
-    @include m.spc {
-        display: none;
-    }
-}
-.slide__area2 {
-    display: none;
-    @include m.spc {
-        display: flex;
-    }
-}
-
 
 @keyframes slide1 {
     0% {
@@ -471,7 +491,7 @@ header {
                 margin: 20px 15px;
             }
             @include m.spc {
-                width: 55%;
+                width: 71%;
                 margin: 0 auto;
             }
 
