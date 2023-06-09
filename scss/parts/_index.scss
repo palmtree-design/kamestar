@@ -457,11 +457,22 @@ header {
             margin: 1.2em 25px 1.2em 25px;
         }
 
+        @include m.spc {
+            margin: 1.2em 25px 1.2em 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         ul {
             margin: 45px 50px;
 
             @include m.tab {
                 margin: 20px 15px;
+            }
+            @include m.spc {
+                width: 55%;
+                margin: 0 auto;
             }
 
             li {
@@ -480,6 +491,16 @@ header {
         border: 18px solid transparent;
         border-left: 28px solid #FFF;
         z-index: 2;
+        @include m.spc {
+            top: 98%;
+            bottom: -20px;
+            right: 50%;
+            left: 50%;
+            margin-top: 0;
+            margin-left: -15px;
+            border: 18px solid transparent;
+            border-top: 28px solid #FFF;
+        }
     }
 
     .features__text::after {
@@ -491,6 +512,17 @@ header {
         border: 20px solid transparent;
         border-left: 30px solid #FE787F;
         z-index: 1;
+        @include m.spc {
+            top: 100%;
+            bottom: -30px;
+            left: 50%;
+            right: 50%;
+            margin-top: 0;
+            margin-left: -17px;
+            z-index: -1;
+            border: 20px solid transparent;
+            border-top: 30px solid #FE787F;
+        }
     }
 }
 
