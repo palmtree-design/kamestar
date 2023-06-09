@@ -131,6 +131,11 @@ header {
                 h3 {
                     padding: 15px 0 20px;
                     text-align: center;
+                    br {
+                        @include m.spc {
+                            display: none;
+                        }
+                        }
                 }
 
                 p {
@@ -152,6 +157,27 @@ header {
     background-size: 100%;
     background-position: bottom, top;
 
+    .merit__title{
+        align-items: center;
+        justify-content: center;
+    h2 {
+        display: block;
+        margin-left: 2%;
+        margin-right: 2%;
+        br {
+            display: none;
+            @include m.tab {
+                display: block;
+            }
+        }
+    }
+    .h2__star{
+        font-size: 46px;
+        @include m.spc {
+            font-size: 34px;
+        }
+    }
+    }
 
     .merit__area {
         display: grid;
@@ -250,11 +276,6 @@ header {
                 justify-content: end;
                 vertical-align: middle;
                 font-size: 22px;
-            }
-            br {
-            @include m.spc {
-                display: none;
-            }
             }
         }
 
@@ -427,11 +448,28 @@ header {
     background: linear-gradient(180deg, rgba(254, 120, 127, .9), rgba(254, 120, 127, .3));
     padding-bottom: 60px;
 
+    .features__title {
+        align-items: center;
+        justify-content: center;
     h2 {
-        padding-top: 60px;
+        display: block;
+        margin-left: 1%;
+        margin-right: 1%;
+        br {
+            display: none;
+            @include m.spc {
+                display: block;
+            }
+        }
+    }
+    .h2__star{
+        font-size: 42px;
+        @include m.spc {
+            font-size: 34px;
+        }
     }
 }
-
+}
 .features__area {
     justify-content: center;
     @include m.spc {

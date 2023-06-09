@@ -45,18 +45,19 @@ h2 {
     text-align: center;
     margin: 60px auto;
     font-size: 34px;
-    .h2__star{
-        color: #FFEC53;
-        font-size: 40px;
-        @include m.tab {
-            font-size: 30px;
-        }
-    }
+
     @include m.tab {
         font-size: 28px;
     }
     @include m.spc {
         font-size: 24px;
+    }
+}
+.h2__star{
+    color: #FFEC53;
+    font-size: 40px;
+    @include m.tab {
+        font-size: 30px;
     }
 }
 
