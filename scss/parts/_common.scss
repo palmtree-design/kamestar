@@ -40,7 +40,7 @@ ol {
     display: flex;
 }
 
-#fixed_btn{
+#fixed_btn {
   position: fixed;
   bottom: 165px; 
   width: 80px;
@@ -66,6 +66,8 @@ ol {
 
 #top_btn{
   position: fixed;
+  display: flex;
+  flex-direction: column;
   width: 140px;
   bottom: 15px;
   right: 10px;
@@ -74,6 +76,7 @@ ol {
   padding: 5px 5px;
   font-size: 18px;
   color: #000;
+  text-align: center;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0,.5));
   img {
     width: 90%;
