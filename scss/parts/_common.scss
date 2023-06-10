@@ -40,31 +40,58 @@ ol {
     display: flex;
 }
 
+#fixed_btn{
+  position: fixed;
+  bottom: 165px; 
+  width: 80px;
+  right: 38px;
+  padding: 5px 5px;
+  z-index: 101;
+  background-color: #06c755;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+  @include m.tab {
+    bottom: 145px;
+    right: 30px;
+    width: 75px;
+    font-size: 12px;
+  }
+  @include m.spc {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
 #top_btn{
   position: fixed;
   width: 140px;
-  bottom: 30px;
-  right: 30px;
+  bottom: 15px;
+  right: 10px;
   z-index: 100;
   border-radius: 6px;
   padding: 5px 5px;
   font-size: 18px;
+  color: #000;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0,.5));
   img {
     width: 90%;
   }
   @include m.tab {
     width: 120px;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 10px;
     font-size: 16px;
   }
   @include m.spc {
     width: 100px;
-    bottom: 15px;
-    right: 15px;
+    bottom: -5px;
+    left: 10px;
     font-size: 14px;
   }
 }
+
 
 h2 {
     text-align: center;
