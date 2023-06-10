@@ -535,6 +535,10 @@ header {
             li {
                 padding-bottom: 10px;
             }
+            li:before{
+                color:#F3A7A9;
+                content:"⭐️ "
+            }
         }
 
     }
@@ -1094,7 +1098,7 @@ footer {
                 .footer__th {
                     min-width: 150px;
                     @include m.spc {
-                        min-width: 120px;
+                        min-width: 110px;
                     }
                 }
 
@@ -1106,23 +1110,9 @@ footer {
                         padding-left: 0;
                     }
                 }
-            }
-        }
-
-        .sns__qr {
-            width: 15%;
-            max-width: 200px;
-            margin: 10px;
-
-            @include m.tab {
-                min-width: 125px;
-            }
-
-            img {
-                width: 100%;
-            }
-            @include m.spc {
-                display: none;
+                @include m.spc {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -1132,5 +1122,8 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 30px;
+        @include m.spc {
+            font-size: 14px;
+        }
     }
 }
