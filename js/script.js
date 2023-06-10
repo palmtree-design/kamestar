@@ -18,3 +18,9 @@ function fadeAnime() {
 $(window).scroll(function () {
     fadeAnime(); /* アニメーション用の関数を呼ぶ*/
 }); // ここまで画面をスクロールをしたら動かしたい場合の記述
+
+$(function(){
+    $("#top_btn").on("click", function(){
+      $("html, body").animate({scrollTop: 0 }, 1000, "swing");
+    });
+  });

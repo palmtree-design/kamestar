@@ -38,7 +38,32 @@ ol {
 }
 .flex {
     display: flex;
+}
 
+#top_btn{
+  position: fixed;
+  width: 140px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-size: 18px;
+  img {
+    width: 90%;
+  }
+  @include m.tab {
+    width: 120px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+  @include m.spc {
+    width: 100px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+  }
 }
 
 h2 {
