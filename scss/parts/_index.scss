@@ -498,8 +498,8 @@ header {
         position: relative;
         display: inline-block;
         margin: 1.5em 25px 1.5em 0;
-        padding: 7px 10px;
-        min-width: 120px;
+        padding: 7px 8px;
+        min-width: 380px;
         max-width: 100%;
         color: #555;
         font-size: 16px;
@@ -510,13 +510,14 @@ header {
 
         @include m.tab {
             padding: 5px;
-            min-width: 270px;
+            min-width: 292px;
             margin: 1.2em 25px 1.2em 25px;
         }
 
         @include m.spc {
             margin: 1.2em 25px 1.2em 25px;
             display: flex;
+            min-width: 323px;
             flex-direction: column;
             justify-content: center;
         }
@@ -1098,7 +1099,7 @@ footer {
                 .footer__th {
                     min-width: 150px;
                     @include m.spc {
-                        min-width: 110px;
+                        min-width: 10px;
                     }
                 }
 
