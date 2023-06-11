@@ -529,9 +529,9 @@ header {
         }
 
         @include m.spc {
-            margin: 1.2em 25px 1.2em 25px;
+            margin: 1.2em 20px 1.2em 20px;
             display: flex;
-            min-width: 323px;
+            min-width: 330px;
             flex-direction: column;
             justify-content: center;
         }
