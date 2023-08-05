@@ -318,7 +318,7 @@ header {
     @include m.spc {
         display: none;
     }
-
+    
     img {
         width: auto;
         height: 100%;
@@ -390,6 +390,11 @@ header {
         font-size: 20px;
         width: 50%;
         padding: 15px;
+
+        h6 {
+            font-weight: normal;
+            font-size: 18px;
+        }
 
         @include m.tab {
             width: 90%;
